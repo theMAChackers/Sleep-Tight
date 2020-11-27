@@ -26,33 +26,18 @@ to
 [announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce).
 See all the [mailing lists](https://www.tensorflow.org/community/forums).
 
-## Install
-
-### To install the current release, which dosen't includes timetable version *(Only Windows)*:
-
-To install Libraries.
-
-```
-$ pip install pyautogui
-
-$ pip install pickle-mixin
-
-$ pip install requests
-
-$ pip install git+https://github.com/ozgur/python-firebase
-
-```
 
 ## Set up instructions
 1. Clone the repo.
 ```sh
-$ git clone https://github.com/SouravJohar/rock-paper-scissors.git
-$ cd rock-paper-scissors
+$ git clone https://github.com/geekyvyas/Sleep-Tight.git
 ```
 
 2. Install the dependencies
 ```sh
 $ pip install -r requirements.txt
+
+$ pip install git+https://github.com/ozgur/python-firebase
 ```
 
 3. Gather Images for each gesture (rock, paper and scissors and None):
