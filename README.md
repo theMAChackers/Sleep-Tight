@@ -24,19 +24,21 @@ $ git clone https://github.com/geekyvyas/Sleep-Tight.git
 $ pip install -r requirements.txt
 
 $ pip install git+https://github.com/ozgur/python-firebase
+
+$ cd Sleep-Tight
 ```
 
 3. Checking the firebase api is working or not!
 ```sh
-$ python3 tasty.py
+$ python tasty.py
 ```
 
 4. Now testing the AutoGUI
 ```sh
-$ python3 test.py
+$ python test.py
 ```
 
 5. Sleep Tight! 
 ```sh
-$ python3 tropy.py
+$ python tropy.py
 ```
