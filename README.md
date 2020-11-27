@@ -34,12 +34,17 @@ $ pip install git+https://github.com/ozgur/python-firebase
 $ python tasty.py
 ```
 
-4. Now testing the AutoGUI
+4. Now testing the Chrome Location your PC
+```sh
+$ python chromedata.py
+```
+
+5. Now testing the AutoGUI
 ```sh
 $ python test.py
 ```
 
-5. Sleep Tight! 
+6. Sleep Tight! 
 ```sh
 $ python tropy.py
 ```
