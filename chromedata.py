@@ -6,8 +6,9 @@ import time
 
 firebase = firebase.FirebaseApplication('https://sleep-tight-8a6df.firebaseio.com/', None)
 pyautogui.alert('After clicking ok move your mouse on chrome and wait for another prompt.')
-currentMouseX, currentMouseY = pyautogui.position()
 time.sleep(4)
+currentMouseX, currentMouseY = pyautogui.position()
+
 
 pyautogui.alert('Done!!!')
 
