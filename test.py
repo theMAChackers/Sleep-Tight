@@ -19,7 +19,7 @@ res = pyautogui.prompt(result)
 pickle.dump(res, open("name","wb")) """
 
 pyautogui.alert('Take a screenshot of chrome and save and replace it in the img folder by chrome.png name, and also pin the chrome to taskbar!!! After saving chrome.png press ok')
-buttonx, buttony = pyautogui.locateCenterOnScreen('img/chrome.png') 
+buttonx, buttony = pyautogui.locateCenterOnScreen('img\chrome.png') 
 pyautogui.click(buttonx, buttony)
 time.sleep(5)
 work_var = pyautogui.confirm('Does your Chrome started', buttons=['YES', 'NO'])
