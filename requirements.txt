@@ -1,1 +1,3 @@
-deed
+pyautogui
+pickle-mixin
+requests
