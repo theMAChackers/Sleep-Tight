@@ -26,23 +26,17 @@ $ pip install -r requirements.txt
 $ pip install git+https://github.com/ozgur/python-firebase
 ```
 
-3. Gather Images for each gesture (rock, paper and scissors and None):
-In this example, we gather 200 images for the "rock" gesture
+3. Checking the firebase api is working or not!
+```sh
+$ python3 tasty.py
+```
+
+4. Now testing the AutoGUI
 ```sh
 $ python3 test.py
 ```
 
-4. Train the model
+5. Sleep Tight! 
 ```sh
-$ python3 train.py
-```
-
-5. Test the model on some images
-```sh
-$ python3 test.py <path_to_test_image>
-```
-
-6. Play the game with your computer!
-```sh
-$ python3 play.py
+$ python3 main.py
 ```
