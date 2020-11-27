@@ -18,10 +18,11 @@ pyautogui.alert('Please copy and paste the name given in next window')
 res = pyautogui.prompt(result)
 pickle.dump(res, open("name","wb")) """
 
-pyautogui.alert('Take a screenshot of chrome and save and replace it in the img folder by chrome.png name, and also pin the chrome to taskbar!!! After saving chrome.png press ok')
-button7location = pyautogui.locateOnScreen('img\chrome.png') # returns (left, top, width, height) of matching region
-buttonx, buttony = pyautogui.center(button7location)
-pyautogui.click(buttonx, buttony)
+id2 = pickle.load(open("chrome","rb"))
+X = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CX' )
+Y = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CY' )
+pyautogui.write(email)
+pyautogui.click(X, Y)
 time.sleep(5)
 work_var = pyautogui.confirm('Does your Chrome started', buttons=['YES', 'NO'])
 if str(work_var) == 'YES':
