@@ -1,3 +1,7 @@
+# REPOSITORY MAINTAINER: [Yajush](https://github.com/geekyvyas) and [Vansh](https://github.com/vansh-arora18) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+
+<img align="right" src="https://media4.giphy.com/media/10bjbpyWbVmDXq/giphy.gif?cid=ecf05e47v48yfuhs6td1hmmk6hwolvswm79tpadxw389osit&rid=giphy.gif" />
+
 Sleep Tight is a programme based on [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) and [Firebase](firebase.google.com/official/site)
 to sleep while automatically attending class XD. It has a comprehensive, flexible ecosystem of
 [tools](https://www.tensorflow.org/resources/tools),
@@ -5,6 +9,7 @@ to sleep while automatically attending class XD. It has a comprehensive, flexibl
 [community](https://www.tensorflow.org/community) resources that lets
 researchers push the state-of-the-art in ML and developers easily build and
 deploy ML-powered applications.
+
 
 TensorFlow was originally developed by researchers and engineers working on the
 Google Brain team within Google's Machine Intelligence Research organization to
