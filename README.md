@@ -38,5 +38,5 @@ $ python3 test.py
 
 5. Sleep Tight! 
 ```sh
-$ python3 main.py
+$ python3 tropy.py
 ```
