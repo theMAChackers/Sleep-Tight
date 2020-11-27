@@ -2,29 +2,15 @@
 
 <img align="right" src="https://media4.giphy.com/media/10bjbpyWbVmDXq/giphy.gif?cid=ecf05e47v48yfuhs6td1hmmk6hwolvswm79tpadxw389osit&rid=giphy.gif" />
 
+Got tired of attending online classes at early morning? Are your parents not letting you sleep due to these online classes?
+Don’t you worry at all here we have brought a special gift for your by combining the knowledge of programming.
 Sleep Tight is a programme based on [PyAutoGUI](https://pypi.org/project/PyAutoGUI/) and [Firebase](firebase.google.com/official/site)
-to sleep while automatically attending class XD. It has a comprehensive, flexible ecosystem of
-[tools](https://www.tensorflow.org/resources/tools),
-[libraries](https://www.tensorflow.org/resources/libraries-extensions), and
-[community](https://www.tensorflow.org/community) resources that lets
-researchers push the state-of-the-art in ML and developers easily build and
-deploy ML-powered applications.
+to sleep while automatically attending class XD. The use of GUI and API are equally responsible for successful execution of the current program. GUI stands for Graphical User Interface, a software platform that presents the back-end data in a visually coherent way to users ex. MacOS, Ubuntu. API stands for Application Program Interface, which has a set of routines and protocols that let your machines talk directly to other machines.
+    
+The program automatically opens up your scheduled online class by its own at its exact time and jumps to next class when the time for previous gets over. The program completely fits for the people those who want to take a break from their daily routine or take a quite decent nap but don’t want to be marked absent in classes.
 
+We are sure that this unique thought and its application won’t disappoint you in any condition and will take on full responsibility and control for your frustrating online classes.
 
-TensorFlow was originally developed by researchers and engineers working on the
-Google Brain team within Google's Machine Intelligence Research organization to
-conduct machine learning and deep neural networks research. The system is
-general enough to be applicable in a wide variety of other domains, as well.
-
-TensorFlow provides stable [Python](https://www.tensorflow.org/api_docs/python)
-and [C++](https://www.tensorflow.org/api_docs/cc) APIs, as well as
-non-guaranteed backward compatible API for
-[other languages](https://www.tensorflow.org/api_docs).
-
-Keep up-to-date with release announcements and security updates by subscribing
-to
-[announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce).
-See all the [mailing lists](https://www.tensorflow.org/community/forums).
 
 
 ## Set up instructions
