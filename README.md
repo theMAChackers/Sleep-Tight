@@ -29,7 +29,7 @@ $ pip install git+https://github.com/ozgur/python-firebase
 3. Gather Images for each gesture (rock, paper and scissors and None):
 In this example, we gather 200 images for the "rock" gesture
 ```sh
-$ python3 gather_images.py rock 200
+$ python3 test.py
 ```
 
 4. Train the model
