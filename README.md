@@ -21,6 +21,8 @@ $ git clone https://github.com/geekyvyas/Sleep-Tight.git
 
 2. Install the dependencies
 ```sh
+$ cd Sleep-Tight
+
 $ pip install -r requirements.txt
 
 $ pip install git+https://github.com/ozgur/python-firebase
