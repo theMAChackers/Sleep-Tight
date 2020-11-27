@@ -18,9 +18,9 @@ pyautogui.alert('Please copy and paste the name given in next window')
 res = pyautogui.prompt(result)
 pickle.dump(res, open("name","wb")) """
 
-buttonx, buttony = pyautogui.locateCenterOnScreen('chrome.png') 
+buttonx, buttony = pyautogui.locateCenterOnScreen('img/chrome.png') 
 pyautogui.click(buttonx, buttony)
-time.delay(3)
+time.sleep(5)
 work_var = pyautogui.confirm('Does your Chrome started', buttons=['YES', 'NO'])
 if str(work_var) == 'YES':
     pyautogui.write('https://cuchd.blackboard.com')
@@ -36,6 +36,7 @@ if str(work_var) == 'YES':
         pyautogui.keyDown('enter')
         pyautogui.alert('Your test file ends here')
     else:
+        pyautogui.alert('Please pin chrome to taskbar and run the Programme.')
 
 else:
     check = pyautogui.confirm('Is your chrome pinned to taskbar?', buttons=['YES', 'NO'])
