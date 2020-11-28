@@ -31,7 +31,7 @@ final = ''.join(key + str(val) for key, val in result.items())
 data = str(final)
 proxy = data[4:24]
 pickle.dump(proxy, open("sign","wb"))
-pyautogui.alert('Now Run test.py using the command given in github README.md file.')
+pyautogui.alert('Now Run sometest.py using the command given in github README.md file.')
 
 
 """ 
