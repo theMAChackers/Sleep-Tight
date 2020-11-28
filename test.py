@@ -7,25 +7,14 @@ from firebase import firebase
 #Confirming already saved chrome png is working or not
 firebase = firebase.FirebaseApplication('https://sleep-tight-8a6df.firebaseio.com/', None)
 
-""" email= pyautogui.prompt('Enter your BB Email')
-passw= pyautogui.prompt('Enter your BB Pass')
-data =  { 
-    'Name': email,
-    'RollNo': passw
-}
-result = firebase.post('/sleep-tight-8a6df/Students/',data)
-pyautogui.alert('Please copy and paste the name given in next window')
-res = pyautogui.prompt(result)
-pickle.dump(res, open("name","wb")) """
-
 id2 = pickle.load(open("chrome","rb"))
 X = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CX' )
 Y = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CY' )
 pyautogui.click(X, Y)
-time.sleep(5)
+time.sleep(8)
 pyautogui.write('https://cuchd.blackboard.com')
+time.sleep(1)
 pyautogui.keyDown('enter')
-
 pyautogui.alert('After clicking ok move your mouse on signin and wait for another prompt.')
 time.sleep(4)
 currentMouseX, currentMouseY = pyautogui.position()
@@ -38,20 +27,14 @@ data =  {
     'SY': currentMouseY
     }
 result = firebase.post('/sleep-tight-8a6df/signin/',data)
-pyautogui.alert('Please copy and paste the name in prompt')
-res = pyautogui.prompt(result)
-pickle.dump(res, open("sign","wb"))
-id = pickle.load(open("sign","rb"))
-time.sleep(8)
-SX = firebase.get('/sleep-tight-8a6df/signin/'+ str(id) , 'SX' )
-confirm = pyautogui.confirm('Is this your Email Id: '+ str(SX), buttons=['YES', 'NO'])
-if str(confirm)=='YES':
-    pyautogui.alert('Now Run test.py using the command given in github README.md file.')
-else:
-    pyautogui.alert('Please copy the error code and raise a issue in the repository by pasting the error and the file name.')
+final = ''.join(key + str(val) for key, val in result.items())
+data = str(final)
+proxy = data[4:24]
+pickle.dump(proxy, open("sign","wb"))
+pyautogui.alert('Now Run test.py using the command given in github README.md file.')
 
 
-""" work_var = pyautogui.confirm('Does your Chrome started', buttons=['YES', 'NO'])
+""" 
 if str(work_var) == 'YES':
     pyautogui.write('https://cuchd.blackboard.com')
     pyautogui.keyDown('enter')
