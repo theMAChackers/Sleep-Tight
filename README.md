@@ -1,4 +1,4 @@
-# REPOSITORY MAINTAINER: [Yajush](https://github.com/geekyvyas) and [Vansh](https://github.com/vansh-arora18) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+# REPOSITORY MAINTAINERS: [Yajush](https://github.com/geekyvyas) and [Vansh](https://github.com/vansh-arora18) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 <img align="right" src="https://media4.giphy.com/media/10bjbpyWbVmDXq/giphy.gif?cid=ecf05e47v48yfuhs6td1hmmk6hwolvswm79tpadxw389osit&rid=giphy.gif" />
 
