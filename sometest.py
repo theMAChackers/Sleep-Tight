@@ -23,7 +23,7 @@ proxy = data[4:23]
 pickle.dump(proxy, open("chrome","wb"))
 id = pickle.load(open("chrome","rb"))
 time.sleep(8)
-CX = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id) , 'TX' )
+CX = firebase.get('/sleep-tight-8a6df/test/'+ str(id) , 'TX' )
 confirm = pyautogui.confirm('Is this your Email Id: '+ str(CX), buttons=['YES', 'NO'])
 if str(confirm)=='YES':
     pyautogui.alert('Now Run test.py using the command given in github README.md file.')
