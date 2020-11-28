@@ -53,55 +53,55 @@ time.sleep(15)
 i=0
 str = "ELT"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "ELP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "UCT"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "UCP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "SMT"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "MEP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "ECP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "UCY"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 i=0
 str = "CST"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
+pickle.dump(str, open(str,"wb"))
 classes(str)
 
 pyautogui.alert('Now Run calendar.py using the command given in github README.md file.')
