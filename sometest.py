@@ -13,7 +13,7 @@ def space(st, i):
         pyautogui.click(X, Y)
         i=i+1
         time.sleep(2)
-        pyautogui.keyDown("down")
+        pyautogui.scroll(-100)
         time.sleep(2)
         space(st, i)
 
