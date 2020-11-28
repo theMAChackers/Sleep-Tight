@@ -8,9 +8,8 @@ def space(st, i):
     if str(opt) == 'YES':
         return i
     else:
-        id2 = pickle.load(open("chrome","rb"))
-        X = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CX' )
-        Y = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CY' )
+        X = 500
+        Y = 15
         pyautogui.click(X, Y)
         i=i+1
         time.sleep(2)
