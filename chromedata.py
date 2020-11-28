@@ -17,14 +17,8 @@ data =  {
     'CY': currentMouseY
     }
 result = firebase.post('/sleep-tight-8a6df/Chrome/',data)
-pyautogui.alert('Please copy and paste the name in prompt')
-res = pyautogui.prompt(result)
-pickle.dump(res, open("chrome","wb"))
-id = pickle.load(open("chrome","rb"))
-time.sleep(8)
-CX = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id) , 'CX' )
-confirm = pyautogui.confirm('Is this your Email Id: '+ str(CX), buttons=['YES', 'NO'])
-if str(confirm)=='YES':
-    pyautogui.alert('Now Run test.py using the command given in github README.md file.')
-else:
-    pyautogui.alert('Please copy the error code and raise a issue in the repository by pasting the error and the file name.')
+final = ''.join(key + str(val) for key, val in result.items())
+data = str(final)
+proxy = data[4:24]
+pickle.dump(proxy, open("chrome","wb"))
+pyautogui.alert('Now Run test.py using the command given in github README.md file.')

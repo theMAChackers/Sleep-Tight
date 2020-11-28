@@ -13,19 +13,12 @@ currentMouseX, currentMouseY = pyautogui.position()
 pyautogui.alert('Done!!!')
 
 data =  { 
-    'TX': currentMouseX,
-    'TY': currentMouseY
+    'CX': currentMouseX,
+    'CY': currentMouseY
     }
-result = firebase.post('/sleep-tight-8a6df/test/',data)
+result = firebase.post('/sleep-tight-8a6df/Chrome/',data)
 final = ''.join(key + str(val) for key, val in result.items())
 data = str(final)
 proxy = data[4:24]
 pickle.dump(proxy, open("chrome","wb"))
-id = pickle.load(open("chrome","rb"))
-time.sleep(8)
-CX = firebase.get('/sleep-tight-8a6df/test/'+ str(id) , 'TX' )
-confirm = pyautogui.confirm('Is this your Email Id: '+ str(CX), buttons=['YES', 'NO'])
-if str(confirm)=='YES':
-    pyautogui.alert('Now Run test.py using the command given in github README.md file.')
-else:
-    pyautogui.alert('Please copy the error code and raise a issue in the repository by pasting the error and the file name.')
+pyautogui.alert('Now Run test.py using the command given in github README.md file.')
