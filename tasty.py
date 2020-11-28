@@ -12,9 +12,10 @@ data =  {
     'RollNo': passw
 }
 result = firebase.post('/sleep-tight-8a6df/Students/',data)
-pyautogui.alert('Please copy and paste the name in prompt')
-res = pyautogui.prompt(result)
-pickle.dump(res, open("name","wb"))
+final = ''.join(key + str(val) for key, val in result.items())
+data = str(final)
+proxy = data[4:24]
+pickle.dump(proxy, open("name","wb"))
 id = pickle.load(open("name","rb"))
 time.sleep(8)
 email = firebase.get('/sleep-tight-8a6df/Students/'+ str(id) , 'Name' )
