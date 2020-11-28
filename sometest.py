@@ -52,55 +52,55 @@ time.sleep(15)
 
 i=0
 st = "ELT"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "ELP"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "UCT"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "UCP"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "SMT"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "MEP"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "ECP"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "UCY"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
 i=0
 st = "CST"
-sp = space(str, i)
+sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
