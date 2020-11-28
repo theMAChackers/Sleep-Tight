@@ -29,22 +29,22 @@ $ pip install git+https://github.com/ozgur/python-firebase
 
 ```
 
-3. Checking the firebase api is working or not!
-```sh
-$ python tasty.py
-```
-
-4. Now testing the Chrome Location your PC
+3. Now testing the Chrome Location your PC
 ```sh
 $ python chromedata.py
 ```
 
-5. Now testing the AutoGUI
+4. Now testing the AutoGUI
 ```sh
 $ python test.py
 ```
 
-6. Sleep Tight! 
+5. Saving All location for subjects
+```sh
+$ python sometest.py
+```
+
+5. Sleep Tight! 
 ```sh
 $ python tropy.py
 ```
