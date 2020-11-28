@@ -89,7 +89,7 @@ classes(str)
 i=0
 str = "ECP"
 sp = space(str, i)
-pickle.dump(str, open(str,"wb"))
+pickle.dump(sp, open(str,"wb"))
 classes(str)
 
 i=0
