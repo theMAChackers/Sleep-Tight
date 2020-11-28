@@ -3,22 +3,60 @@ import pyautogui
 import pickle
 import time
 
+def space(str):
+    pyautogui.keyDown("down")
+    
+
+def classes(str):
+    pyautogui.alert('After clicking ok without scrolling move your mouse on ' + str + ' and wait for another prompt.')
+    time.sleep(4)
+    currentMouseX, currentMouseY = pyautogui.position()
+    pyautogui.alert('Done!!!')
+
+    data =  { 
+        'X': currentMouseX,
+        'Y': currentMouseY
+        }
+    result = firebase.post('/sleep-tight-8a6df/'+str+'/',data)
+    final = ''.join(key + str(val) for key, val in result.items())
+    data = str(final)
+    proxy = data[4:24]
+    pickle.dump(proxy, open(str,"wb"))
 
 firebase = firebase.FirebaseApplication('https://sleep-tight-8a6df.firebaseio.com/', None)
-pyautogui.alert('After clicking ok move your mouse on chrome and wait for another prompt.')
-time.sleep(4)
-currentMouseX, currentMouseY = pyautogui.position()
 
 
-pyautogui.alert('Done!!!')
+id2 = pickle.load(open("chrome","rb"))
+X = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CX' )
+Y = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CY' )
+pyautogui.click(X, Y)
 
-data =  { 
-    'CX': currentMouseX,
-    'CY': currentMouseY
-    }
-result = firebase.post('/sleep-tight-8a6df/Chrome/',data)
-final = ''.join(key + str(val) for key, val in result.items())
-data = str(final)
-proxy = data[4:24]
-pickle.dump(proxy, open("chrome","wb"))
-pyautogui.alert('Now Run test.py using the command given in github README.md file.')
+time.sleep(2)
+pyautogui.write('https://cuchd.blackboard.com/ultra/course')
+pyautogui.keyDown('enter')
+
+time.sleep(10)
+id2 = pickle.load(open("sign","rb"))
+X = firebase.get('/sleep-tight-8a6df/signin/'+ str(id2) , 'SX' )
+Y = firebase.get('/sleep-tight-8a6df/signin/'+ str(id2) , 'SY' )
+pyautogui.click(X, Y)
+
+
+time.sleep(15)
+
+classes("ELT")
+classes("ELP")
+classes("UCT")
+classes("UCP")
+classes("SMT")
+classes("MEP")
+classes("ECP")
+classes("UCY")
+classes("CST")
+
+pyautogui.alert('Now Run calendar.py using the command given in github README.md file.')
+
+
+
+    
+
