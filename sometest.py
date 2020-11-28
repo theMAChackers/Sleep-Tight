@@ -64,43 +64,43 @@ classes(str)
 
 i=0
 str = "UCT"
-ELTPSP = space(str, i)
+sp = space(str, i)
 pickle.dump(sp, open(str,"wb"))
 classes(str)
 
 i=0
 str = "UCP"
-ELTPSP = space(str, i)
+sp = space(str, i)
 pickle.dump(sp, open(str,"wb"))
 classes(str)
 
 i=0
 str = "SMT"
-ELTPSP = space(str, i)
+sp = space(str, i)
 pickle.dump(sp, open(str,"wb"))
 classes(str)
 
 i=0
 str = "MEP"
-ELTPSP = space(str, i)
+sp = space(str, i)
 pickle.dump(sp, open(str,"wb"))
 classes(str)
 
 i=0
 str = "ECP"
-ELTPSP = space(str, i)
+sp = space(str, i)
 pickle.dump(sp, open(str,"wb"))
 classes(str)
 
 i=0
 str = "UCY"
-ELTPSP = space(str, i)
+sp = space(str, i)
 pickle.dump(sp, open(str,"wb"))
 classes(str)
 
 i=0
 str = "CST"
-ELTPSP = space(str, i)
+sp = space(str, i)
 pickle.dump(sp, open(str,"wb"))
 classes(str)
 
