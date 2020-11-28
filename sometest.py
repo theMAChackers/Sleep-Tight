@@ -3,17 +3,17 @@ import pyautogui
 import pickle
 import time
 
-def space(str, i):
-    opt = pyautogui.confirm('Is ' + str + ' Visbile?? And please dont scroll', buttons=['YES', 'NO'])
+def space(st, i):
+    opt = pyautogui.confirm('Is ' + st + ' Visbile?? And please dont scroll', buttons=['YES', 'NO'])
     if str(opt) == 'YES':
         return i
     else:
         i=i+1
         pyautogui.keyDown("down")
-        space(str, i)
+        space(st, i)
 
-def classes(str):
-    pyautogui.alert('After clicking ok without scrolling move your mouse on ' + str + ' and wait for another prompt.')
+def classes(st):
+    pyautogui.alert('After clicking ok without scrolling move your mouse on ' + st + ' and wait for another prompt.')
     time.sleep(4)
     currentMouseX, currentMouseY = pyautogui.position()
     pyautogui.alert('Done!!!')
@@ -22,11 +22,11 @@ def classes(str):
         'X': currentMouseX,
         'Y': currentMouseY
         }
-    result = firebase.post('/sleep-tight-8a6df/'+str+'/',data)
+    result = firebase.post('/sleep-tight-8a6df/'+st+'/',data)
     final = ''.join(key + str(val) for key, val in result.items())
     data = str(final)
     proxy = data[4:24]
-    pickle.dump(proxy, open(str,"wb"))
+    pickle.dump(proxy, open(st,"wb"))
 
 firebase = firebase.FirebaseApplication('https://sleep-tight-8a6df.firebaseio.com/', None)
 
@@ -51,58 +51,58 @@ time.sleep(15)
 
 
 i=0
-str = "ELT"
+st = "ELT"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "ELP"
+st = "ELP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "UCT"
+st = "UCT"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "UCP"
+st = "UCP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "SMT"
+st = "SMT"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "MEP"
+st = "MEP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "ECP"
+st = "ECP"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "UCY"
+st = "UCY"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 i=0
-str = "CST"
+st = "CST"
 sp = space(str, i)
-pickle.dump(sp, open(str,"wb"))
-classes(str)
+pickle.dump(sp, open(st,"wb"))
+classes(st)
 
 
 
