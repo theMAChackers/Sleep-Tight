@@ -1,3 +1,5 @@
+import pickle
+from firebase import firebase
 import pyautogui
 import time
 
@@ -133,22 +135,23 @@ def MEP():
     buttonx, buttony
     pyautogui.click(buttonx, buttony)
 
-button7location = pyautogui.locateOnScreen('img\chrome.png')
-button7location
-buttonx, buttony = pyautogui.center(button7location)
-buttonx, buttony
-pyautogui.click(buttonx, buttony)
+firebase = firebase.FirebaseApplication('https://sleep-tight-8a6df.firebaseio.com/', None)
+
+
+id2 = pickle.load(open("chrome","rb"))
+X = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CX' )
+Y = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CY' )
+pyautogui.click(X, Y)
 
 time.sleep(2)
 pyautogui.write('https://cuchd.blackboard.com/ultra/course')
 pyautogui.keyDown('enter')
 
 time.sleep(10)
-button8location = pyautogui.locateOnScreen('img\signin.png')
-button8location
-buttonx, buttony = pyautogui.center(button8location)
-buttonx, buttony
-pyautogui.click(buttonx, buttony)
+id2 = pickle.load(open("sign","rb"))
+X = firebase.get('/sleep-tight-8a6df/signin/'+ str(id2) , 'SX' )
+Y = firebase.get('/sleep-tight-8a6df/signin/'+ str(id2) , 'SY' )
+pyautogui.click(X, Y)
 
 time.sleep(6)
 cross()
