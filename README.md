@@ -29,12 +29,12 @@ $ pip install git+https://github.com/ozgur/python-firebase
 
 ```
 
-3. Now testing the Chrome Location your PC
+3. Now testing the Chrome Location on your PC
 ```sh
 $ python chromedata.py
 ```
 
-4. Now testing the AutoGUI
+4. Now testing the AutoGUI with chrome and sign in
 ```sh
 $ python test.py
 ```
