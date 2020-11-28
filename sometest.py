@@ -3,9 +3,14 @@ import pyautogui
 import pickle
 import time
 
-def space(str):
-    pyautogui.keyDown("down")
-    
+def space(str, i):
+    opt = pyautogui.confirm('Is ' + str + ' Visbile?? And please dont scroll', buttons=['YES', 'NO'])
+    if str(opt) == 'YES':
+        return i
+    else:
+        i=i+1
+        pyautogui.keyDown("down")
+        space(str, i)
 
 def classes(str):
     pyautogui.alert('After clicking ok without scrolling move your mouse on ' + str + ' and wait for another prompt.')
@@ -44,15 +49,60 @@ pyautogui.click(X, Y)
 
 time.sleep(15)
 
-classes("ELT")
-classes("ELP")
-classes("UCT")
-classes("UCP")
-classes("SMT")
-classes("MEP")
-classes("ECP")
-classes("UCY")
-classes("CST")
+
+i=0
+str = "ELT"
+sp = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "ELP"
+sp = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "UCT"
+ELTPSP = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "UCP"
+ELTPSP = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "SMT"
+ELTPSP = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "MEP"
+ELTPSP = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "ECP"
+ELTPSP = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "UCY"
+ELTPSP = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
+
+i=0
+str = "CST"
+ELTPSP = space(str, i)
+pickle.dump(sp, open(str,"wb"))
+classes(str)
 
 pyautogui.alert('Now Run calendar.py using the command given in github README.md file.')
 
