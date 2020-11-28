@@ -11,7 +11,7 @@ def space(st, i):
         pyautogui.alert('Please click somewhere in chrome so that file can scroll automatical for testing.')
         i=i+1
         time.sleep(4)
-        pyautogui.keyDown("down")
+        pyautogui.scroll(-100)
         time.sleep(2)
         space(st, i)
 
