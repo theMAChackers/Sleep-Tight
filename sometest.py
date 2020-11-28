@@ -19,7 +19,7 @@ data =  {
 result = firebase.post('/sleep-tight-8a6df/test/',data)
 final = ''.join(key + str(val) for key, val in result.items())
 data = str(final)
-proxy = data[4:23]
+proxy = data[4:24]
 pickle.dump(proxy, open("chrome","wb"))
 id = pickle.load(open("chrome","rb"))
 time.sleep(8)
