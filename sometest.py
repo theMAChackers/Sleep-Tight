@@ -8,12 +8,10 @@ def space(st, i):
     if str(opt) == 'YES':
         return i
     else:
-        X = 500
-        Y = 15
-        pyautogui.click(X, Y)
+        pyautogui.alert('Please click somewhere in chrome so that file can scroll automatical for testing.')
         i=i+1
-        time.sleep(2)
-        pyautogui.scroll(-100)
+        time.sleep(4)
+        pyautogui.keyDown("down")
         time.sleep(2)
         space(st, i)
 
