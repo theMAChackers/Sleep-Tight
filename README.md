@@ -28,6 +28,7 @@ $ pip install -r requirements.txt
 $ pip install git+https://github.com/ozgur/python-firebase
 
 ```
+### After running each command please close your browser 
 
 3. Now testing the Chrome Location on your PC
 ```sh
