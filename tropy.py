@@ -32,7 +32,7 @@ X = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CX' )
 Y = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CY' )
 pyautogui.click(X, Y)
 
-time.sleep(2)
+time.sleep(4)
 pyautogui.write('https://cuchd.blackboard.com/ultra/course')
 pyautogui.keyDown('enter')
 
@@ -44,22 +44,23 @@ pyautogui.click(X, Y)
 
 time.sleep(15)
 
-for j in range(0,2):
+for j in range(0,3):
     if j == 0:
         st = "ELT"
     elif j==1:
         st="ELP"
+    elif j==2:
     i = pickle.load(open(st,"rb"))
     space(i)
     time.sleep(2)
     slass(st)
     time.sleep(4)
     join()
-    time.sleep(20)
+    time.sleep(35)
     pyautogui.hotkey('ctrl', 'w')
     time.sleep(2)
     pyautogui.hotkey('alt', 'left')
-    time.sleep(15)
+    time.sleep(10)
 
 
 
