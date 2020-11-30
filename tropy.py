@@ -46,7 +46,7 @@ time.sleep(15)
 
 for j in range(0,6)
     st = "ELT"
-    i = int(pickle.load(open(st,"rb")))
+    i = pickle.load(open(stp,"rb"))
     space(i)
     slass(st)
     join()

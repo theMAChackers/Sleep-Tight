@@ -3,8 +3,8 @@ from firebase import firebase
 import pyautogui
 import time
 
-def space(i):
-    for j in range(0, i):
+def space(saq):
+    for j in range(0, saq):
          pyautogui.scroll(-100)
 
 def slass(st):
@@ -34,8 +34,9 @@ pyautogui.click(X, Y)
 time.sleep(15)
 
 st = "ELT"
-i = int(pickle.load(open(st,"rb")))
-space(i)
+i = pickle.load(open(stp,"rb"))
+saq = int(i)
+space(saq)
 slass(st)
 
 pyautogui.alert('After clicking ok move your mouse on join session and wait for another prompt.')
