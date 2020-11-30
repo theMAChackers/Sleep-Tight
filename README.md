@@ -45,7 +45,12 @@ $ python test.py
 $ python sometest.py
 ```
 
-5. Sleep Tight! 
+5. Join and Course room
 ```sh
-$ python tropy.py   ////work in progress for this file
+$ python join.py
+```
+
+6. Sleep Tight! 
+```sh
+$ python tropy.py   
 ```
