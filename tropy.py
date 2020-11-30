@@ -50,6 +50,7 @@ for j in range(0,3):
     elif j==1:
         st="ELP"
     elif j==2:
+        st="UCT"
     i = pickle.load(open(st,"rb"))
     space(i)
     time.sleep(2)
