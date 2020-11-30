@@ -45,7 +45,10 @@ pyautogui.click(X, Y)
 time.sleep(15)
 
 for j in range(0,2):
-    st = "ELT"
+    if j == 0:
+        st = "ELT"
+    elif j==1:
+        st="ELP"
     i = pickle.load(open(st,"rb"))
     space(i)
     time.sleep(2)
