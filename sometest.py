@@ -29,6 +29,7 @@ def classes(st):
     final = ''.join(key + str(val) for key, val in result.items())
     data = str(final)
     proxy = data[4:24]
+    stp = st
     pickle.dump(proxy, open(stp,"wb"))
 
 firebase = firebase.FirebaseApplication('https://sleep-tight-8a6df.firebaseio.com/', None)
