@@ -57,6 +57,7 @@ for j in range(0,2):
     join()
     time.sleep(20)
     pyautogui.hotkey('ctrl', 'w')
+    time.sleep(2)
     pyautogui.hotkey('alt', 'left')
     time.sleep(15)
 
