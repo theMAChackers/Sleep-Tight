@@ -39,7 +39,7 @@ X = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CX' )
 Y = firebase.get('/sleep-tight-8a6df/Chrome/'+ str(id2) , 'CY' )
 pyautogui.click(X, Y)
 
-time.sleep(2)
+time.sleep(5)
 pyautogui.write('https://cuchd.blackboard.com/ultra/course')
 pyautogui.keyDown('enter')
 
