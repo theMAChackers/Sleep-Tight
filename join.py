@@ -40,7 +40,7 @@ space(saq)
 slass(st)
 
 pyautogui.alert('After clicking ok move your mouse on join session and wait for another prompt.')
-time.sleep(4)
+time.sleep(5)
 currentMouseX, currentMouseY = pyautogui.position()
 
 
