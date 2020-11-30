@@ -19,8 +19,7 @@ def space(i):
          pyautogui.scroll(-100)
 
 def slass(st):
-    stp=st
-    id2 = pickle.load(open(stp,"rb"))
+    id2 = pickle.load(open(st+"1","rb"))
     CX = firebase.get('/sleep-tight-8a6df/'+st+'/'+ str(id2) , 'X' )
     CY = firebase.get('/sleep-tight-8a6df/'+st+'/'+ str(id2) , 'Y' )
     pyautogui.click(CX, CY)

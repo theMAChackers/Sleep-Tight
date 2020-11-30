@@ -9,7 +9,7 @@ def space(saq):
 
 def slass(st):
     stp = st
-    id2 = pickle.load(open(stp,"rb"))
+    id2 = pickle.load(open(st+"1","rb"))
     CX = firebase.get('/sleep-tight-8a6df/signin/'+st+'/'+ str(id2) , 'X' )
     CY = firebase.get('/sleep-tight-8a6df/signin/'+st+'/'+ str(id2) , 'Y' )
     pyautogui.click(CX, CY)
@@ -35,7 +35,6 @@ pyautogui.click(X, Y)
 time.sleep(15)
 
 st = "ELT"
-stp = st
 i = pickle.load(open(st,"rb"))
 saq = int(i)
 space(saq)
