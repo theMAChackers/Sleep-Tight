@@ -20,8 +20,8 @@ def space(i):
 
 def slass(st):
     id2 = pickle.load(open(st,"rb"))
-    CX = firebase.get('/sleep-tight-8a6df/signin/'+st+'/'+ str(id2) , 'X' )
-    CY = firebase.get('/sleep-tight-8a6df/signin/'+st+'/'+ str(id2) , 'Y' )
+    CX = firebase.get('/sleep-tight-8a6df/'+st+'/'+ str(id2) , 'X' )
+    CY = firebase.get('/sleep-tight-8a6df/'+st+'/'+ str(id2) , 'Y' )
     pyautogui.click(CX, CY)
 
 firebase = firebase.FirebaseApplication('https://sleep-tight-8a6df.firebaseio.com/', None)
