@@ -3,13 +3,6 @@ from firebase import firebase
 import pyautogui
 import time
 
-def cross():
-    button9location = pyautogui.locateOnScreen("img/cross.png")
-    button9location
-    buttonx, buttony = pyautogui.center(button9location)
-    buttonx, buttony
-    pyautogui.click(buttonx, buttony)
-
 def join():
     id2 = pickle.load(open("jesi","rb"))
     X = firebase.get('/sleep-tight-8a6df/jssion/'+ str(id2) , 'X' )
@@ -20,27 +13,6 @@ def join():
     X = firebase.get('/sleep-tight-8a6df/jssion1/'+ str(id2) , 'X' )
     Y = firebase.get('/sleep-tight-8a6df/jssion1/'+ str(id2) , 'Y' )
     pyautogui.click(X, Y)
-
-def leave():
-    button1234location = pyautogui.locateOnScreen("img/for leave.png")
-    button1234location
-    buttonx, buttony = pyautogui.center(button1234location)
-    buttonx, buttony
-    pyautogui.click(buttonx, buttony)
-
-    time.sleep(3)
-    button2345location = pyautogui.locateOnScreen("img/leave session.png")
-    button2345location
-    buttonx, buttony = pyautogui.center(button2345location)
-    buttonx, buttony
-    pyautogui.click(buttonx, buttony)
-
-    time.sleep(2)
-    button3456location = pyautogui.locateOnScreen("img/skip.png")
-    button3456location
-    buttonx, buttony = pyautogui.center(button3456location)
-    buttonx, buttony
-    pyautogui.click(buttonx, buttony)
 
 def space(i):
     for j in range(0, i):
@@ -78,7 +50,9 @@ for j in range(0,6)
     space(i)
     slass(st)
     join()
+    time.sleep(20)
     pyautogui.hotkey('alt', 'left')
+    time.sleep(15)
 
 
 

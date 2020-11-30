@@ -76,4 +76,4 @@ final = ''.join(key + str(val) for key, val in result.items())
 data = str(final)
 proxy = data[4:24]
 pickle.dump(proxy, open("jesin","wb"))
-pyautogui.alert('Now Run inporg.py using the command given in github README.md file.')
+pyautogui.alert('Now Run tropy.py using the command given in github README.md file.')
