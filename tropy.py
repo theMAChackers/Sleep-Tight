@@ -14,8 +14,8 @@ def join():
     Y = firebase.get('/sleep-tight-8a6df/jssion1/'+ str(id2) , 'Y' )
     pyautogui.click(X, Y)
 
-def space(i):
-    for j in range(0, i):
+def space(sppp):
+    for k in range(0, sppp):
          pyautogui.scroll(-100)
 
 def slass(st):
@@ -52,7 +52,8 @@ for j in range(0,3):
     elif j==2:
         st="UCT"
     i = pickle.load(open(st,"rb"))
-    space(i)
+    sppp=int(i)
+    space(sppp)
     time.sleep(2)
     slass(st)
     time.sleep(4)
