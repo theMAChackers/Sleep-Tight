@@ -83,7 +83,7 @@ sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
 
-i=0
+""" i=0
 st = "MEP"
 sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
@@ -106,10 +106,10 @@ st = "CST"
 sp = space(st, i)
 pickle.dump(sp, open(st,"wb"))
 classes(st)
+ """
 
 
-
-pyautogui.alert('Now Run calendar.py using the command given in github README.md file.')
+pyautogui.alert('Now Run join.py using the command given in github README.md file.')
 
 
 

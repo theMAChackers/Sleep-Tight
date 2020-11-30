@@ -34,7 +34,7 @@ pyautogui.click(X, Y)
 time.sleep(15)
 
 st = "ELT"
-i = pickle.load(open(st,"rb"))
+i = int(pickle.load(open(st,"rb")))
 space(i)
 slass(st)
 
