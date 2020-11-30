@@ -8,7 +8,7 @@ def join():
     X = firebase.get('/sleep-tight-8a6df/jssion/'+ str(id2) , 'X' )
     Y = firebase.get('/sleep-tight-8a6df/jssion/'+ str(id2) , 'Y' )
     pyautogui.click(X, Y)
-
+    time.sleep(3)
     id2 = pickle.load(open("jesin","rb"))
     X = firebase.get('/sleep-tight-8a6df/jssion1/'+ str(id2) , 'X' )
     Y = firebase.get('/sleep-tight-8a6df/jssion1/'+ str(id2) , 'Y' )
@@ -48,9 +48,12 @@ for j in range(0,2):
     st = "ELT"
     i = pickle.load(open(st,"rb"))
     space(i)
+    time.sleep(2)
     slass(st)
+    time.sleep(4)
     join()
     time.sleep(20)
+    pyautogui.hotkey('ctrl', 'w')
     pyautogui.hotkey('alt', 'left')
     time.sleep(15)
 
