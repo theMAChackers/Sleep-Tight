@@ -184,5 +184,19 @@ pyautogui.keyDown("down")
 pyautogui.keyDown("return")
 pyautogui.keyDown("return")
 time.sleep(5)
-ELT()
+n= input()
+timetable={}
+for i in range(n):
+    name = input()
+    data = input()
+    timetable[name] = data
+
+for name, data in timetable.items():
+    if data == date:
+        print(data)
+
+for i in range(date)
+    if date == data:
+        ELT()
+
 
