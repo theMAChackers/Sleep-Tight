@@ -13,7 +13,7 @@ We are sure that this unique thought and its application won’t disappoint you 
 
 
 
-## Set up instructions
+## Set up instructions.
 1. Clone the repo.
 ```sh
 $ git clone https://github.com/geekyvyas/Sleep-Tight.git
