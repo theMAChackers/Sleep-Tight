@@ -198,5 +198,6 @@ for name, data in timetable.items():
 for i in range(date)
     if date == data:
         ELT()
+        ELP()
 
 
